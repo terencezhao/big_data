@@ -1,0 +1,47 @@
+MPCS 53013 - FINAL PROJECT
+
+I want to create an application that illustrates how socioeconomic factors impact crime rates in various chicago neighborhoods.
+I obtained my datasets from the following data.gov websites: 
+http://catalog.data.gov/dataset/crimes-2001-to-present-398a4
+http://catalog.data.gov/dataset/census-data-selected-socioeconomic-indicators-in-chicago-2008-2012-36e55
+*Since the second dataset is limited between 2008-2012, I will only use crimes between those year ranges from the first dataset for the sake of accuracy.
+
+My goal is to create an application that exposes the most significant factors that contribute to high crime rates in certain neighborhoods in Chicago.
+It will also be interesting to see where, when, and what type of crimes occur most often.
+For example, the application could help answer the following questions about crime trends in Chicago:
+What time do crimes most often occur?
+What day of the week typically sees the most crime?
+What month of the year typically has most crime?
+How is the annual rate of crime changing
+What type of crime is most common in Chicago?
+Which neighborhoods have the highset crime rate in Chicago?
+
+
+Batch Layer:
+I uploaded the crime data into hive using crime.hql
+
+How many crimes per community area?
+For each community area, how many crimes of each type are there?
+
+
+Serving Layer:
+Crimes by Community:
+community_area -> crimes per hour (12AM-1AM, 1AM-2AM, ..., 11PM-12PM)
+community_area -> crimes per day of week (Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday)
+community_area -> crimes per month (Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Nov, Dec)
+community_area -> crimes per year (2008, 2009, 2010, 2011, 2012)
+community_area -> indicators
+
+Speed Layer:
+
+
+Web Interface:
+A map of chicago communities: clicking on a community area shows crime stats and indicators about that community
+Several options in a menu for trends
+Two charts for visualizing crime and indicator trends:
+Different bar or line graphs showing the frequency of crimes per hour, day, month, year, type of crime, community area etc.
+Chicago map color coded gradient showing which community area has the most: crimes, type of crime, indicators
+Chart that shows side-by-side a communities number of crimes compared to Chicago's average and that communities socioeconomic hardship indicator compared to the average.
+Want to show that inidicators have a direct correlation to crime rate
+
+
